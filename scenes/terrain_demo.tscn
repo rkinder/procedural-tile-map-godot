@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://demo_scene_terrain"]
+[gd_scene load_steps=3 format=3 uid="uid://dl5f55s0e7yno"]
 
 [ext_resource type="TileSet" uid="uid://cqh8yxm0vjwpy" path="res://assets/tiles/terrain_tileset.tres" id="1"]
-[ext_resource type="Script" path="res://scripts/map_generator.gd" id="2"]
+[ext_resource type="Script" uid="uid://cqgakrrkhnu5s" path="res://scripts/map_generator.gd" id="2"]
 
 [node name="TerrainDemo" type="Node2D"]
 
@@ -9,22 +9,12 @@
 tile_set = ExtResource("1")
 format = 2
 layer_0/name = "Terrain"
-layer_0/tile_data = PackedInt32Array()
 
 [node name="MapGenerator" type="Node" parent="."]
 script = ExtResource("2")
-map_width = 512
-map_height = 512
-random_seed = 0
-auto_generate = true
-noise_type_name = "Simplex"
-noise_frequency = 0.01
-noise_octaves = 3
-noise_fractal_gain = 0.5
-water_threshold = -0.3
-sand_threshold = 0.0
-grass_threshold = 0.4
-stone_threshold = 0.7
+noise_frequency = 0.02
+noise_octaves = 4
+water_threshold = 0.10000000000000009
 debug_timing = true
 show_statistics = true
 tile_map_path = NodePath("../TileMap")
