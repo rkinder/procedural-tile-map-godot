@@ -1,0 +1,40 @@
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://cqh8yxm0vjwpy"]
+
+[ext_resource type="Texture2D" uid="uid://water_tile" path="res://assets/tiles/water.svg" id="1"]
+[ext_resource type="Texture2D" uid="uid://sand_tile" path="res://assets/tiles/sand.svg" id="2"]
+[ext_resource type="Texture2D" uid="uid://grass_tile" path="res://assets/tiles/grass.svg" id="3"]
+[ext_resource type="Texture2D" uid="uid://stone_tile" path="res://assets/tiles/stone.svg" id="4"]
+[ext_resource type="Texture2D" uid="uid://snow_tile" path="res://assets/tiles/snow.svg" id="5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_water"]
+texture = ExtResource("1")
+texture_region_size = Vector2i(16, 16)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sand"]
+texture = ExtResource("2")
+texture_region_size = Vector2i(16, 16)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_grass"]
+texture = ExtResource("3")
+texture_region_size = Vector2i(16, 16)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_stone"]
+texture = ExtResource("4")
+texture_region_size = Vector2i(16, 16)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_snow"]
+texture = ExtResource("5")
+texture_region_size = Vector2i(16, 16)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(16, 16)
+sources/0 = SubResource("TileSetAtlasSource_water")
+sources/1 = SubResource("TileSetAtlasSource_sand")
+sources/2 = SubResource("TileSetAtlasSource_grass")
+sources/3 = SubResource("TileSetAtlasSource_stone")
+sources/4 = SubResource("TileSetAtlasSource_snow")
