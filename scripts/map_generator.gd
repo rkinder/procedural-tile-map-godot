@@ -170,8 +170,9 @@ func generate_map() -> bool:
 			var tile_id: int = _tile_mapper.map_noise_to_tile(noise_value)
 
 			# Step 3: Place the tile in the TileMap
-			# Layer 0, position (x,y), source_id 0, atlas coords (tile_id, 0)
-			tile_map.set_cell(0, Vector2i(x, y), 0, Vector2i(tile_id, 0))
+			# Layer 0, position (x,y), source_id (tile_id), atlas coords (0, 0)
+			# Each tile type has its own source (0-4), with one tile at position (0,0)
+			tile_map.set_cell(0, Vector2i(x, y), tile_id, Vector2i(0, 0))
 
 	# Calculate generation time
 	var end_time: int = Time.get_ticks_msec()
