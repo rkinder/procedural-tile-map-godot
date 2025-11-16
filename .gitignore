@@ -1,4 +1,6 @@
-.claude/settings.local.json
+# Claude Code and Kilocode directories
+.claude/
+.kilocode/
 
 # Godot 4+ specific ignores
 .godot/
